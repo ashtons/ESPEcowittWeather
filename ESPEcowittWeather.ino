@@ -109,7 +109,7 @@ void fetchAndDisplayWeather()
     http.setTimeout(10000);
 
     Serial.println("Requesting Ecowitt weather data");
-    Serial.println(url);
+    // Serial.println(url);
     drawStatus("Updating");
 
     if (!http.begin(client, url))
